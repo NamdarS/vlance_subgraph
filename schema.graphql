@@ -1,0 +1,7 @@
+type verifiedGithubContributor @entity(immutable: true) {
+  id: Bytes!
+  contributor: Bytes! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
